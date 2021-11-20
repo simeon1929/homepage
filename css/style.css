@@ -1,0 +1,222 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h4 img {
+  width: 20px;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+h2, h4 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.triger {
+  display: none;
+}
+
+header {
+  background-color: green;
+  height: 10vh;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul li {
+  padding: 15px;
+}
+
+header ul li a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.home__banner {
+  background: url(../imges/gallerybg.jpg) no-repeat center;
+  background-size: cover;
+  height: calc(100vh - 66px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.home__banner::after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.home__banner .bannertext {
+  color: #fff;
+}
+
+.gallery {
+  background: url(../imges/gallerybg.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #db5959;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 30px;
+}
+
+.inputBox, .textArea {
+  min-width: 100%;
+  margin-bottom: 15px;
+}
+
+input, .textArea {
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.textArea {
+  resize: none;
+}
+
+input[type="submit"] {
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: green;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
+  body, nav {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  body.activeMenu {
+    right: 240px;
+  }
+  header nav {
+    position: absolute;
+    right: -240px;
+    top: 0;
+    width: 240px;
+    background-color: #000;
+    z-index: 1;
+    height: 100%;
+    display: none;
+  }
+  header nav.activeMenu {
+    display: block;
+  }
+  header nav ul {
+    display: block;
+  }
+  header nav ul li {
+    border-bottom: 1px solid #fff;
+  }
+  header .triger {
+    display: block;
+  }
+  header .triger span {
+    height: 4px;
+    width: 30px;
+    margin-bottom: 3px;
+    background-color: crimson;
+    display: block;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=style.css.map */
